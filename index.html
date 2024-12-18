@@ -9,8 +9,9 @@
 <body>
   <!-- Cabeçalho -->
   <header>
-    <nav>
+    <nav class="nav">
       <div class="logo">Glamour</div>
+      <button class="hamburger"></button>
       <ul class="menu">
         <li><a href="#home">Início</a></li>
         <li><a href="#services">Serviços</a></li>
@@ -72,9 +73,9 @@
   <section id="contact" class="section contact">
     <h2>Entre em Contato</h2>
     <form>
-      <input type="text" placeholder="Seu Nome" required>
-      <input type="email" placeholder="Seu Email" required>
-      <textarea placeholder="Sua Mensagem" required></textarea>
+      <input id="name" type="text" placeholder="Seu Nome" required>
+      <input id="email" type="email" placeholder="Seu Email" required>
+      <textarea id="message" placeholder="Sua Mensagem" required></textarea>
       <button type="submit">Enviar</button>
     </form>
   </section>
