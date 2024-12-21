@@ -72,7 +72,7 @@
   
   /* Seção Home */
   .home {
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
@@ -83,6 +83,9 @@
     justify-content: center;
     text-align: center;
     color: var(--secondary-color);
+    position: relative;
+    z-index: 1;
+    height: 100vh;
   }
   
   .home h1 {
@@ -111,6 +114,20 @@
   
   .home .btn:hover {
     transform: scale(1.05);
+  }
+  .banner{
+    position: absolute;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    margin-bottom: 17%;
+  }
+  .banner img{
+    width: 100%;
+    object-fit: cover;
+    opacity: .2;
   }
   
   /* Seções */
@@ -269,6 +286,23 @@
       font-size: 1.8rem;
       font-weight: 600;
       color: var(--primary-color);
+    }
+    .banner{
+      height: 100%;
+      top: 0;
+    }
+    .banner img{
+      opacity: .3;
+    }
+    .content{
+      padding-top: 15%;
+      padding-bottom: 10%;
+    }
+    .home{
+      height: 200%;
+    }
+    .services{
+      margin-top: 5%;
     }
     .hamburger{
       display: block;
